@@ -95,7 +95,7 @@ SISMS/
 │   │
 │   └── config/
 │       ├── AppConfig.java.example  # Boilerplate — copy this, see Configuration below
-│       └── AppConfig.java          # ⚠️ your real credentials — git-ignored, not in this repo
+│       └── AppConfig.java          
 │
 ├── resources/
 │   └── images/                   # Background and icon assets used by the UI
