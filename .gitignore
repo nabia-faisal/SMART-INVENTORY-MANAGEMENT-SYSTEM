@@ -1,0 +1,17 @@
+# Compiled class files
+bin/
+*.class
+
+# Real config with live credentials — never commit this.
+# Copy src/config/AppConfig.java.example to src/config/AppConfig.java and fill it in locally.
+src/config/AppConfig.java
+
+# IDE / OS junk
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+*.iml
+
+# Generated invoices (written to the user's home folder at runtime, not part of the repo)
+sisms_bills/

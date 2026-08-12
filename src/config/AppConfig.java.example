@@ -1,0 +1,26 @@
+package config;
+
+// ─────────────────────────────────────────────────────────────────────────
+// SETUP: copy this file to "AppConfig.java" in this same folder, then fill
+// in the values below with your own. AppConfig.java is git-ignored on
+// purpose — it holds live credentials and must never be committed.
+//
+//   cp src/config/AppConfig.java.example src/config/AppConfig.java     (macOS/Linux)
+//   copy src\config\AppConfig.java.example src\config\AppConfig.java   (Windows)
+// ─────────────────────────────────────────────────────────────────────────
+public class AppConfig {
+
+    // ─── Database ────────────────────────────────────────────────────────
+    public static final String DB_URL      = "jdbc:mysql://127.0.0.1:3306/inventory?useSSL=false";
+    public static final String DB_USER     = "root";                 // ← your MySQL username
+    public static final String DB_PASSWORD = "your_mysql_password";  // ← your MySQL password
+
+    // ─── Email (Gmail SMTP) ─────────────────────────────────────────────
+    // Used to send OTP codes and account-lockout notices.
+    public static final String SMTP_HOST     = "smtp.gmail.com";
+    public static final String SMTP_PORT     = "587";
+    public static final String SMTP_USER     = "your_email@gmail.com";  // ← your Gmail address
+    public static final String SMTP_PASSWORD = "your_app_password";     // ← Gmail App Password, NOT your login password
+    // Generate one at https://myaccount.google.com/apppasswords
+    // (requires 2-Step Verification enabled on the Google account)
+}
